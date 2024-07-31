@@ -15,6 +15,7 @@ func AppHandler(w http.ResponseWriter, r *http.Request) {
         return
     }
 
+    
     response := fmt.Sprintf("Received parameters: param_1 = %s, param_2 = %s", param1, param2)
     fmt.Fprintf(w, response)
 }
